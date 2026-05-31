@@ -37,3 +37,66 @@ export async function triggerScrapeWorkflow(searchUrl: string): Promise<{ succes
     return { success: false, message: `네트워크 오류: ${err instanceof Error ? err.message : '알 수 없는 오류'}` };
   }
 }
+
+
+/**
+ * 최신 scrape 워크플로우 실행 상태를 확인한다.
+ * @returns 'queued' | 'in_progress' | 'completed' | 'failure' | 'unknown'
+ */
+export async function checkWorkflowStatus(): Promise<string> {
+  if (!GH_TOKEN) return 'unknown';
+
+  const apiUrl = `https://api.github.com/repos/${GH_REPO}/actions/workflows/scrape.yml/runs?per_page=1`;
+
+  try {
+    const response = await fetch(apiUrl, {
+      headers: {
+        'Authorization': `Bearer ${GH_TOKEN}`,
+        'Accept': 'application/vnd.github.v3+json',
+      },
+    });
+
+    if (!response.ok) return 'unknown';
+
+    const data = await response.json();
+    const runs = data.workflow_runs;
+    if (!runs || runs.length === 0) return 'unknown';
+
+    const latest = runs[0];
+    if (latest.status === 'completed') {
+      return latest.conclusion === 'success' ? 'completed' : 'failure';
+    }
+    return latest.status; // 'queued' or 'in_progress'
+  } catch {
+    return 'unknown';
+  }
+}
+
+/**
+ * 워크플로우 완료까지 폴링한다.
+ * @param onStatusChange 상태 변경 시 콜백
+ * @param intervalMs 폴링 간격 (기본 10초)
+ * @param maxAttempts 최대 시도 횟수 (기본 30 = 5분)
+ * @returns 최종 상태
+ */
+export async function pollWorkflowUntilDone(
+  onStatusChange?: (status: string) => void,
+  intervalMs = 10000,
+  maxAttempts = 30
+): Promise<string> {
+  // 워크플로우가 시작되기까지 잠시 대기
+  await new Promise((r) => setTimeout(r, 5000));
+
+  for (let i = 0; i < maxAttempts; i++) {
+    const status = await checkWorkflowStatus();
+    onStatusChange?.(status);
+
+    if (status === 'completed' || status === 'failure') {
+      return status;
+    }
+
+    await new Promise((r) => setTimeout(r, intervalMs));
+  }
+
+  return 'timeout';
+}

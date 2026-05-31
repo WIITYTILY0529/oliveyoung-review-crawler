@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { loadCrawlData } from '../services/dataService';
-import { triggerScrapeWorkflow } from '../services/githubApi';
+import { triggerScrapeWorkflow, pollWorkflowUntilDone } from '../services/githubApi';
 import type { CrawlData } from '../types';
 
 /**
@@ -15,7 +15,8 @@ export function HomePage() {
   const [loading, setLoading] = useState(true);
   const [url, setUrl] = useState('');
   const [submitting, setSubmitting] = useState(false);
-  const [message, setMessage] = useState<{ type: 'success' | 'error'; text: string } | null>(null);
+  const [polling, setPolling] = useState(false);
+  const [message, setMessage] = useState<{ type: 'success' | 'error' | 'info'; text: string } | null>(null);
 
   useEffect(() => {
     loadCrawlData().then((result) => {
@@ -43,8 +44,27 @@ export function HomePage() {
     setSubmitting(false);
 
     if (result.success) {
-      setMessage({ type: 'success', text: result.message });
+      setMessage({ type: 'info', text: '크롤링 진행 중... 완료되면 자동으로 새로고침됩니다.' });
       setUrl('');
+      setPolling(true);
+
+      // 워크플로우 완료까지 폴링
+      const finalStatus = await pollWorkflowUntilDone((status) => {
+        if (status === 'in_progress') {
+          setMessage({ type: 'info', text: '크롤링 진행 중... 완료되면 자동으로 새로고침됩니다.' });
+        }
+      });
+
+      setPolling(false);
+
+      if (finalStatus === 'completed') {
+        setMessage({ type: 'success', text: '크롤링 완료! 페이지를 새로고침합니다...' });
+        setTimeout(() => window.location.reload(), 2000);
+      } else if (finalStatus === 'failure') {
+        setMessage({ type: 'error', text: '크롤링이 실패했습니다. GitHub Actions 로그를 확인하세요.' });
+      } else {
+        setMessage({ type: 'error', text: '시간 초과. GitHub Actions 탭에서 상태를 확인하세요.' });
+      }
     } else {
       setMessage({ type: 'error', text: result.message });
     }
@@ -90,18 +110,18 @@ export function HomePage() {
             />
             <button
               type="submit"
-              disabled={submitting}
+              disabled={submitting || polling}
               className="px-6 py-3 bg-green-600 text-white font-medium rounded-lg
                          hover:bg-green-700 transition-colors
                          disabled:bg-gray-400 disabled:cursor-not-allowed
                          whitespace-nowrap cursor-pointer"
             >
-              {submitting ? '요청 중...' : '크롤링 시작'}
+              {polling ? '크롤링 중...' : submitting ? '요청 중...' : '크롤링 시작'}
             </button>
           </div>
 
           {message && (
-            <p className={`mt-3 text-sm ${message.type === 'success' ? 'text-green-600' : 'text-red-600'}`}>
+            <p className={`mt-3 text-sm ${message.type === 'success' ? 'text-green-600' : message.type === 'info' ? 'text-blue-600' : 'text-red-600'}`}>
               {message.text}
             </p>
           )}
