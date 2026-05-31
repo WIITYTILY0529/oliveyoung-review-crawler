@@ -1,0 +1,111 @@
+{
+  "searchUrl": "https://www.oliveyoung.co.kr/store/search/getSearchMain.do?query=%EC%BF%A0%EC%85%98",
+  "searchQuery": "쿠션",
+  "crawledAt": "2025-05-31T09:00:00Z",
+  "products": [
+    {
+      "id": "A000000251851",
+      "name": "[NEW22호출시/리필증정 리뷰이벤트] 네이밍 올데이 마스터 쿠션 기획 (본품+리필)",
+      "brand": "네이밍",
+      "price": 26730,
+      "originalPrice": 34000,
+      "imageUrl": "https://image.oliveyoung.co.kr/uploads/images/goods/400/10/0000/0025/A00000025185101ko.jpg",
+      "url": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000251851",
+      "averageRating": 4.7,
+      "reviewCount": 658,
+      "reviewStats": {
+        "averageRating": 4.7,
+        "reviewCount": 658,
+        "ratingDistribution": [
+          { "rating": 5, "percentage": 80 },
+          { "rating": 4, "percentage": 11 },
+          { "rating": 3, "percentage": 5 },
+          { "rating": 2, "percentage": 2 },
+          { "rating": 1, "percentage": 2 }
+        ],
+        "attributes": [
+          {
+            "name": "커버력",
+            "answers": [
+              { "name": "아주 만족해요", "percentage": 72 },
+              { "name": "보통이에요", "percentage": 24 },
+              { "name": "다소 아쉬워요", "percentage": 4 }
+            ]
+          },
+          {
+            "name": "지속력",
+            "answers": [
+              { "name": "아주 만족해요", "percentage": 68 },
+              { "name": "보통이에요", "percentage": 27 },
+              { "name": "다소 아쉬워요", "percentage": 5 }
+            ]
+          },
+          {
+            "name": "밀착력",
+            "answers": [
+              { "name": "아주 만족해요", "percentage": 75 },
+              { "name": "보통이에요", "percentage": 22 },
+              { "name": "다소 아쉬워요", "percentage": 3 }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "A000000230801",
+      "name": "에스쁘아 비 글로우 쿠션 NEW 기획 (본품+리필)",
+      "brand": "에스쁘아",
+      "price": 31200,
+      "originalPrice": 38000,
+      "imageUrl": "https://image.oliveyoung.co.kr/uploads/images/goods/400/10/0000/0023/A00000023080101ko.jpg",
+      "url": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000230801",
+      "averageRating": 4.5,
+      "reviewCount": 1243,
+      "reviewStats": {
+        "averageRating": 4.5,
+        "reviewCount": 1243,
+        "ratingDistribution": [
+          { "rating": 5, "percentage": 70 },
+          { "rating": 4, "percentage": 17 },
+          { "rating": 3, "percentage": 7 },
+          { "rating": 2, "percentage": 3 },
+          { "rating": 1, "percentage": 3 }
+        ],
+        "attributes": [
+          {
+            "name": "커버력",
+            "answers": [
+              { "name": "아주 만족해요", "percentage": 65 },
+              { "name": "보통이에요", "percentage": 28 },
+              { "name": "다소 아쉬워요", "percentage": 7 }
+            ]
+          },
+          {
+            "name": "지속력",
+            "answers": [
+              { "name": "아주 만족해요", "percentage": 60 },
+              { "name": "보통이에요", "percentage": 32 },
+              { "name": "다소 아쉬워요", "percentage": 8 }
+            ]
+          },
+          {
+            "name": "수분감",
+            "answers": [
+              { "name": "아주 만족해요", "percentage": 78 },
+              { "name": "보통이에요", "percentage": 18 },
+              { "name": "다소 아쉬워요", "percentage": 4 }
+            ]
+          },
+          {
+            "name": "피부타입",
+            "answers": [
+              { "name": "건성", "percentage": 35 },
+              { "name": "복합성", "percentage": 40 },
+              { "name": "지성", "percentage": 25 }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

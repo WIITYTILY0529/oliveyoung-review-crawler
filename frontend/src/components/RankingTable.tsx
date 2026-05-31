@@ -44,7 +44,7 @@ export function RankingTable({ products }: RankingTableProps) {
                 ⭐ {product.averageRating.toFixed(1)}
               </td>
               <td className="px-4 py-3 text-right text-gray-600">
-                {product.totalReviews.toLocaleString('ko-KR')}개
+                {product.reviewCount.toLocaleString('ko-KR')}개
               </td>
             </tr>
           ))}

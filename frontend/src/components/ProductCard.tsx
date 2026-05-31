@@ -8,11 +8,10 @@ interface ProductCardProps {
 /**
  * 상품 카드 컴포넌트
  * - 상품명, 브랜드, 가격, 평균 평점, 리뷰 수 표시
- * - 이미지 (있을 경우)
- * - 클릭 시 상세 페이지로 이동
  */
 export function ProductCard({ product, onClick }: ProductCardProps) {
   const formattedPrice = product.price.toLocaleString('ko-KR');
+  const hasDiscount = product.originalPrice > product.price;
 
   const renderStars = (rating: number) => {
     const fullStars = Math.floor(rating);
@@ -50,9 +49,14 @@ export function ProductCard({ product, onClick }: ProductCardProps) {
           {product.name}
         </h3>
 
-        <p className="text-lg font-bold text-gray-900 mb-2">
-          {formattedPrice}원
-        </p>
+        <div className="flex items-baseline gap-2 mb-2">
+          <span className="text-lg font-bold text-gray-900">{formattedPrice}원</span>
+          {hasDiscount && (
+            <span className="text-xs text-gray-400 line-through">
+              {product.originalPrice.toLocaleString('ko-KR')}원
+            </span>
+          )}
+        </div>
 
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-1">
@@ -64,9 +68,15 @@ export function ProductCard({ product, onClick }: ProductCardProps) {
             </span>
           </div>
           <span className="text-xs text-gray-500">
-            리뷰 {product.totalReviews.toLocaleString('ko-KR')}개
+            리뷰 {product.reviewCount.toLocaleString('ko-KR')}개
           </span>
         </div>
+
+        {product.reviewStats && (
+          <div className="mt-2 pt-2 border-t border-gray-100">
+            <span className="text-xs text-green-600">리뷰 통계 있음</span>
+          </div>
+        )}
       </div>
     </button>
   );
