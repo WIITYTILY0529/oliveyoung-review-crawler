@@ -34,7 +34,9 @@ jobs:
         run: python -m playwright install chromium
 
       - name: Run scraper
-        run: python scripts/scrape_oliveyoung.py "${{ github.event.inputs.search_url }}"
+        run: python scripts/crawl_and_visualize.py "${{ github.event.inputs.search_url }}"
+        env:
+          HEADLESS: "true"
 
       - name: Commit results
         run: |

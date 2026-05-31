@@ -1,0 +1,227 @@
+{
+  "searchUrl": "https://www.oliveyoung.co.kr/store/search/getSearchMain.do?startCount=0&sort=WEIGHT%2FDESC%2CSALE_QTY%2FDESC&goods_sort=WEIGHT%2FDESC%2CSALE_QTY%2FDESC&collection=ALL&realQuery=%EC%BF%A0%EC%85%98&reQuery=&viewtype=image&category=&catename=LCTG_ID&catedepth=1&rt=&setMinPrice=&setMaxPrice=&listnum=36&tmp_requery=&tmp_requery2=&categoryDepthValue=&cateId=&cateId2=&BenefitAll_CHECK=&query=%EC%BF%A0%EC%85%98&selectCateNm=%EC%A0%84%EC%B2%B4&firstTotalCount=479&typeChk=thum&branChk=&brandTop=&attrChk=opened&attrTop=&onlyOneBrand=&quickYn=N&cateChk=&benefitChk=&attrCheck0=&attrCheck1=&attrCheck2=f48191b25ac92e4912d04007736cd8a1%7C&attrCheck3=&attrCheck4=&brandChkList=&benefitChkList=&_displayImgUploadUrl=https%3A%2F%2Fimage.oliveyoung.co.kr%2Fuploads%2Fimages%2Fdisplay%2F&recobellMbrNo=null&recobellCuid=8b47cf9f-efd1-48e4-8f83-10ee8a07945b&t_page=%EC%BF%A0%EC%85%98%EA%B2%80%EC%83%89&t_click=%EC%83%81%ED%92%88%EB%B6%84%EB%A5%98%ED%95%84%ED%84%B0&t_search_name=&sale_below_price=&sale_over_price=&reChk=&attr_check2=f48191b25ac92e4912d04007736cd8a1",
+  "searchQuery": "쿠션",
+  "crawledAt": "2026-05-31T10:08:25.803041+00:00",
+  "products": [
+    {
+      "id": "A000000251851",
+      "name": "[NEW22호출시/리필증정 리뷰이벤트] 네이밍 올데이 마스터 쿠션 기획 (본품+리필)",
+      "brand": "네이밍",
+      "price": 26730,
+      "originalPrice": 34000,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0025/A00000025185113ko.jpg?l=ko",
+      "reviewCount": 661,
+      "reviewStats": null
+    },
+    {
+      "id": "A000000249162",
+      "name": "[리필+실버파우치 증정] 라네즈 네오 쿠션 더 매트 15g",
+      "brand": "라네즈",
+      "price": 23520,
+      "originalPrice": 30000,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0024/A00000024916216ko.jpg?l=ko",
+      "reviewCount": 1811,
+      "reviewStats": null
+    },
+    {
+      "id": "A000000139022",
+      "name": "[롱래스팅쿠션] 정샘물 에센셜 스킨 누더 롱웨어 쿠션 (본품+리필)",
+      "brand": "정샘물",
+      "price": 37950,
+      "originalPrice": 48000,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0013/A00000013902272ko.jpg?l=ko",
+      "reviewCount": 5364,
+      "reviewStats": null
+    },
+    {
+      "id": "A000000226593",
+      "name": "[올영세일특가/모공커버쿠션] 네이밍 제로 그래비티 커버 업 쿠션 기획(본품+리필)",
+      "brand": "네이밍",
+      "price": 25840,
+      "originalPrice": 34000,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0022/A00000022659373ko.jpg?l=ko",
+      "reviewCount": 4705,
+      "reviewStats": null
+    },
+    {
+      "id": "A000000232144",
+      "name": "투쿨포스쿨 픽싱 커버 핏 쿠션 (+리필2개 단독기획)",
+      "brand": "투쿨포스쿨",
+      "price": 22800,
+      "originalPrice": 38000,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0023/A00000023214421ko.png?l=ko",
+      "reviewCount": 3896,
+      "reviewStats": null
+    },
+    {
+      "id": "A000000219580",
+      "name": "[NEW단독기획] 티르티르 마스크 핏 AI 필터 쿠션 (기획/단품)",
+      "brand": "티르티르",
+      "price": 20880,
+      "originalPrice": 29000,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0021/A00000021958033ko.jpg?l=ko",
+      "reviewCount": 2350,
+      "reviewStats": null
+    },
+    {
+      "id": "A000000232517",
+      "name": "[미니쿠션/포켓뷰티] 에스쁘아 미니 쿠션 3종 택1 (비벨벳/비글로우/세범컷)",
+      "brand": "에스쁘아",
+      "price": 12160,
+      "originalPrice": 16000,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0023/A00000023251713ko.jpg?l=ko",
+      "reviewCount": 458,
+      "reviewStats": null
+    },
+    {
+      "id": "A000000224326",
+      "name": "[한겹밀착쿠션] 코스노리 플러핏 라이트매트 쿠션 (단품/기획)",
+      "brand": "코스노리",
+      "price": 14790,
+      "originalPrice": 32000,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0022/A00000022432637ko.jpg?l=ko",
+      "reviewCount": 1946,
+      "reviewStats": null
+    },
+    {
+      "id": "A000000231907",
+      "name": "[뽀송매트] 이지듀 멜라 비 토닝 매트 커버 팩트 19g",
+      "brand": "이지듀",
+      "price": 36860,
+      "originalPrice": 39800,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0023/A00000023190708ko.jpg?l=ko",
+      "reviewCount": 82,
+      "reviewStats": null
+    },
+    {
+      "id": "A000000164072",
+      "name": "[롬앤X이나피스퀘어] 롬앤 누 제로 쿠션",
+      "brand": "롬앤",
+      "price": 18910,
+      "originalPrice": 25000,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0016/A00000016407228ko.jpg?l=ko",
+      "reviewCount": 5301,
+      "reviewStats": null
+    },
+    {
+      "id": "A000000225000",
+      "name": "[퍼스트맨 PICK/한겹 쿠션] 더툴랩 스탬프 스킨핏 쿠션 에어리 (브러쉬 세트/리필 세트/단품)",
+      "brand": "더툴랩",
+      "price": 39510,
+      "originalPrice": 57000,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0022/A00000022500031ko.png?l=ko",
+      "reviewCount": 251,
+      "reviewStats": null
+    },
+    {
+      "id": "A000000210402",
+      "name": "[리필기획] AGE20S 실키 픽싱 팩트(본품+리필)",
+      "brand": "에이지투웨니스",
+      "price": 27360,
+      "originalPrice": 38000,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0021/A00000021040224ko.jpg?l=ko",
+      "reviewCount": 128,
+      "reviewStats": null
+    },
+    {
+      "id": "A000000226096",
+      "name": "[컨실러/리필 증정] 웨이크메이크 심리스 웨어 쿠션 9COLOR(기획)",
+      "brand": "웨이크메이크",
+      "price": 22820,
+      "originalPrice": 36000,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0022/A00000022609631ko.jpg?l=ko",
+      "reviewCount": 3370,
+      "reviewStats": null
+    },
+    {
+      "id": "A000000184641",
+      "name": "지베르니 밀착 매트핏 쿠션(본품+리필)",
+      "brand": "지베르니",
+      "price": 26010,
+      "originalPrice": 37000,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0018/A00000018464117ko.jpg?l=ko",
+      "reviewCount": 986,
+      "reviewStats": null
+    },
+    {
+      "id": "A000000231781",
+      "name": "[NEW] 티르티르 마스크 핏 AI 필터 미니 쿠션",
+      "brand": "티르티르",
+      "price": 12240,
+      "originalPrice": 17000,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0023/A00000023178106ko.jpg?l=ko",
+      "reviewCount": 85,
+      "reviewStats": null
+    },
+    {
+      "id": "A000000221775",
+      "name": "바비브라운 웨이트리스 스킨 쿠션 파운데이션 SPF40 PA+++",
+      "brand": "바비브라운",
+      "price": 63200,
+      "originalPrice": 79000,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0022/A00000022177508ko.jpg?l=ko",
+      "reviewCount": 11,
+      "reviewStats": null
+    },
+    {
+      "id": "A000000231189",
+      "name": "[RIIZE원빈PICK] 이더앤 블러 픽셀 쿠션 12g 6종 (단품/기획)",
+      "brand": "이더앤",
+      "price": 22950,
+      "originalPrice": 34000,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0023/A00000023118914ko.jpg?l=ko",
+      "reviewCount": 177,
+      "reviewStats": null
+    },
+    {
+      "id": "A000000199953",
+      "name": "무지개맨션 슬릭매트 쿠션",
+      "brand": "무지개맨션",
+      "price": 26250,
+      "originalPrice": 35000,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0019/A00000019995313ko.png?l=ko",
+      "reviewCount": 949,
+      "reviewStats": null
+    },
+    {
+      "id": "A000000227099",
+      "name": "[NEW] 삐아 오 매트 쿠션 15g 3종",
+      "brand": "삐아",
+      "price": 12000,
+      "originalPrice": 30000,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0022/A00000022709910ko.jpg?l=ko",
+      "reviewCount": 42,
+      "reviewStats": null
+    },
+    {
+      "id": "A000000199741",
+      "name": "루나 블러 커버 쿠션 12g (단품)",
+      "brand": "루나",
+      "price": 21760,
+      "originalPrice": 34000,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0019/A00000019974113ko.jpg?l=ko",
+      "reviewCount": 487,
+      "reviewStats": null
+    },
+    {
+      "id": "A000000231388",
+      "name": "[리필출시/모공쿠션] 더툴랩 스탬프 스킨핏 쿠션 에어리 리필",
+      "brand": "더툴랩",
+      "price": 17100,
+      "originalPrice": 20000,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0023/A00000023138821ko.jpg?l=ko",
+      "reviewCount": 5,
+      "reviewStats": null
+    },
+    {
+      "id": "A000000208283",
+      "name": "웨이크메이크 스테이 픽서 매끈 프라이머밤 수분 부스팅",
+      "brand": "웨이크메이크",
+      "price": 16800,
+      "originalPrice": 23000,
+      "imageUrl": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0020/A00000020828308ko.jpg?l=ko",
+      "reviewCount": 575,
+      "reviewStats": null
+    }
+  ]
+}
